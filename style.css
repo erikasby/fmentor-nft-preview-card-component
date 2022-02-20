@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 54%, 11%);
+}
+
+/* Card */
+.card {
+  max-width: 32rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 1.5rem;
+  background-color: hsl(216, 50%, 16%);
+}
+
+.card__image img {
+  max-width: 100%;
+  display: block;
+}
+
+.card__image {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.card__image:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: rgba(0, 255, 247, 0.5);
+}
+
+.card__image:hover::after {
+  content: url(images/icon-view.svg);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  color: hsl(0, 0%, 100%);
+}
+
+.card__title {
+  font-size: 2rem;
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+}
+
+.card__title:hover {
+  color: rgba(0, 255, 247);
+}
+
+.card__content {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: hsl(215, 51%, 70%);
+}
+
+/* Details */
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(139, 172, 218, 0.2);
+}
+
+.details__value {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: hsl(178, 100%, 50%);
+}
+
+.details__time {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: hsl(215, 51%, 70%);
+}
+
+/* Author */
+.author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author__image {
+  width: 3rem;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 99px;
+}
+
+.author__name {
+  font-size: 1.6rem;
+  color: hsl(215, 51%, 70%);
+}
+
+.author__name span {
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+}
+
+.author__name span:hover {
+  color: hsl(178, 100%, 50%);
+}
