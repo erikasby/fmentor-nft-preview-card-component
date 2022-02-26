@@ -16,7 +16,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Screenshot
 
-<img src="screenshots/desktop.png" height=500>
+<img src="screenshots/desktop.png" height=400>
 <img src="screenshots/mobile.png" height=500>
 
 ### Links
@@ -32,5 +32,4 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ## Author
 
-- Frontend Mentor - [erikasby](https://www.frontendmentor.io/profile/erikasby)
 - Twitter - [@erikasbykovskis](https://www.twitter.com/erikasbykovskis)
